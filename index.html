@@ -7,8 +7,18 @@
     <body>
 
         <script>
+        
+        let playerSelection = prompt('Please enter your Rock/Paper/Scissors Choice: ');
+        let computerSelection = getComputerChoice();
+
+        function getComputerChoice(){
+            let randomSelection = ['Scissors', 'Rock', 'Paper'];
+            let randomNumber = Math.floor(Math.random()*3)
+            return randomSelection[randomNumber]
+        }
+
 
         </script>
-        
+
     </body>
 </html>
