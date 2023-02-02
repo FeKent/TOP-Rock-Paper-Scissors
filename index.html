@@ -56,10 +56,13 @@
                 
             } else (playerSelection === computerSelection);
                 return 'You Draw!'
+
+             console.log(playRound(playerSelection,computerSelection))
+             console.log('You\'ve scored: '+playerWinCount +'\n' + 'The Computer has scored: '+ computerWinCount)
         }
 
-        console.log(playRound(playerSelection,computerSelection))
-        console.log(playerWinCount, computerWinCount)
+       /* console.log(playRound(playerSelection,computerSelection))
+        console.log('You\'ve scored: '+playerWinCount +'\n' + 'The Computer has scored: '+ computerWinCount) */
 
         /*for(let i = 0; i <5; i++){
             while (i <5);
