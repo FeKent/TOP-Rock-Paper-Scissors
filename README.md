@@ -42,3 +42,5 @@ Solutions
 1. Got user input by using prompt
 2. Struggled a little with this, especially as I was unsure how to use the   getComputerChoice function, but I was able to use an string array to show the choices the computer could make, and then use some Math functions to choose a random number between 0 and 2, which when combined chose 0=Scissors, 1=Rock, 2=Paper
 3. I combined step 3 and 4, and make it into an if..else if tree inside a play round function 
+
+Evaluation
