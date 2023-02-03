@@ -7,10 +7,6 @@
     <body>
 
         <script>
-        
-        let playerSelection = prompt('Please enter your Rock/Paper/Scissors Choice: ');
-        
-        let computerSelection = getComputerChoice();
 
         function getComputerChoice(){
             let randomSelection = ['Scissors', 'Rock', 'Paper'];
@@ -18,25 +14,47 @@
             return randomSelection[randomNumber]
         }
         
+
+        let playerWinCount = 0;
+        let computerWinCount = 0;
+
         function playRound (playerSelection, computerSelection){
+         
             if (playerSelection === 'Rock' && computerSelection === 'Paper'){
+                computerWinCount = (computerWinCount+=1);
                 return 'You Lose! Paper beats Rock'
+
             } else if (playerSelection === 'Paper' && computerSelection === 'Rock'){
+                playerWinCount = (playerWinCount+=1);
                 return 'You Win! Paper beats Rock'
+                
             } else if (playerSelection === 'Paper' && computerSelection === 'Scissors'){
+                computerWinCount = (computerWinCount+=1);
                 return 'You Lose! Scissors beats Paper'
+                
             } else if (playerSelection === 'Scissors' && computerSelection === 'Paper'){
+                playerWinCount = (playerWinCount+=1);
                 return 'You Win! Scissors beats Paper'
+                
             } else if (playerSelection === 'Rock' && computerSelection === 'Scissors'){
+                playerWinCount = (playerWinCount+=1);
                 return 'You Win! Rock beats Scissors'
+               
             } else if(playerSelection === 'Scissors' && computerSelection === 'Rock'){
+                computerWinCount = (computerWinCount+=1);
                 return 'You Lose! Rock beats Scissors'
+                
             } else (playerSelection === computerSelection);
                 return 'You Draw!'
         }
 
-        console.log(playRound(playerSelection,computerSelection))
-
+        for (let i =0; i < 4; i++){
+            let playerSelection = prompt('Please enter your Rock/Paper/Scissors Choice: ');
+            let computerSelection = getComputerChoice();
+            const playRoundResult = playRound(playerSelection, computerSelection);
+            console.log(playRoundResult);
+            console.log('You\'ve scored: '+playerWinCount +'\n' + 'The Computer has scored: '+ computerWinCount)
+        }
 
 
         </script>
