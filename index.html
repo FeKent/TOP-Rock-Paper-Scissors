@@ -21,27 +21,27 @@
         function playRound (playerSelection, computerSelection){
          
             if (playerSelection === 'Rock' && computerSelection === 'Paper'){
-                computerWinCount = (computerWinCount+=1);
+                computerWinCount +=1;
                 return 'You Lose! Paper beats Rock'
 
             } else if (playerSelection === 'Paper' && computerSelection === 'Rock'){
-                playerWinCount = (playerWinCount+=1);
+                playerWinCount +=1;
                 return 'You Win! Paper beats Rock'
                 
             } else if (playerSelection === 'Paper' && computerSelection === 'Scissors'){
-                computerWinCount = (computerWinCount+=1);
+                computerWinCount +=1;
                 return 'You Lose! Scissors beats Paper'
                 
             } else if (playerSelection === 'Scissors' && computerSelection === 'Paper'){
-                playerWinCount = (playerWinCount+=1);
+                playerWinCount +=1;
                 return 'You Win! Scissors beats Paper'
                 
             } else if (playerSelection === 'Rock' && computerSelection === 'Scissors'){
-                playerWinCount = (playerWinCount+=1);
+                playerWinCount +=1;
                 return 'You Win! Rock beats Scissors'
                
             } else if(playerSelection === 'Scissors' && computerSelection === 'Rock'){
-                computerWinCount = (computerWinCount+=1);
+                computerWinCount +=1;
                 return 'You Lose! Rock beats Scissors'
                 
             } else (playerSelection === computerSelection);
