@@ -60,10 +60,13 @@ Skills Demonstrated
 - Implemented a For loop in JavaScript
 - Console logged function outputs
 - Planning and implementation of a solution to a task
-- JavaScript Sytnax 
+- JavaScript Sytnax
+- Input validation
 
 What I have learnt
 
 - Need to define functions and variables before using them within a For loop
 - It's best to streamline code as much as you can - leaving excess/unused code can lead  to errors or unexpected results
 - When changing the value of a variable (WinCount variables) +/-= symbols are used so that the value is updated AND reassigned back to the variable, without the = sign, there would be a floating value left
+- How to implement input validation
+- How to use maps to change items within an array
