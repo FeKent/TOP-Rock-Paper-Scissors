@@ -68,6 +68,7 @@
             validPlayerChoice = checkPlayerChoice(playerSelection)
 
             while (validPlayerChoice == false) {
+                console.log('That was an invalid choice, please pick again!')
                 playerSelection = getPlayerChoice().toLowerCase();
                 validPlayerChoice = checkPlayerChoice(playerSelection)
             }
