@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Rock, Paper, Scissors!</title>
+        <script src="UI.js"></script>
     </head>
     <body>
 
@@ -62,7 +63,7 @@
         }
 
         function startGame() {
-            for (let i =0; i < 4; i++){
+            //for (let i =0; i < 4; i++){
             let validPlayerChoice = false
             let playerSelection = getPlayerChoice().toLowerCase();
             validPlayerChoice = checkPlayerChoice(playerSelection)
@@ -78,7 +79,7 @@
             console.log(playRoundResult);
             console.log('You\'ve scored: '+playerWinCount +'\n' + 'The Computer has scored: '+ computerWinCount)
          }
-        }
+        //}
 
         startGame()
 
