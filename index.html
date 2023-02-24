@@ -3,19 +3,43 @@
     <head>
         <meta charset="utf-8">
         <title>Rock, Paper, Scissors!</title>
-        <script src="UI.js" defer></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-
-        <!-- <div id="btnContainer"></div> -->
-
-        
+  
        <script>
 
-        /*function getPlayerChoice() {
-            let choice = prompt('Please enter your Rock/Paper/Scissors Choice: ');
-            return choice
-        }
+        
+        const container = document.createElement('div');
+        container.setAttribute('id', 'btnContainer');
+        document.body.appendChild(container);
+        //document.body appends the container directly to the body of the HTML 
+
+        const button = document.createElement('button');
+        button.textContent = 'Rock';
+        button.style.fontSize = '20px';
+        button.classList.add('rock');
+
+        const button1 = document.createElement('button');
+        button1.textContent = 'Paper';
+        button1.style.fontSize = '20px';
+        button1.classList.add('paper');
+
+        const button2 = document.createElement('button');
+        button2.textContent = 'Scissors';
+        button2.style.fontSize = '20px';
+        button2.classList.add('scissors');
+
+        container.appendChild(button);
+        container.appendChild(button1);
+        container.appendChild(button2);
+
+
+        button.addEventListener('click', () =>{
+            let playerSelection ='rock';
+            console.log('You chose Rock');
+        });
+      
 
         function getComputerChoice(){
             let randomSelection = ['Scissors', 'Rock', 'Paper'];
@@ -23,14 +47,14 @@
             return randomSelection[randomNumber]
         }
 
-        function checkPlayerChoice(choice) {
-            let validChoices = ['Scissors', 'Rock', 'Paper']
-            let lowercaseChoices = validChoices.map(x => x.toLowerCase())
-            if (lowercaseChoices.includes(choice)) {
-                return true
-            } 
-            return false
-        }
+        // function checkPlayerChoice(choice) {
+        //     let validChoices = ['Scissors', 'Rock', 'Paper']
+        //     let lowercaseChoices = validChoices.map(x => x.toLowerCase())
+        //     if (lowercaseChoices.includes(choice)) {
+        //         return true
+        //     } 
+        //     return false
+        // }
 
         let playerWinCount = 0;
         let computerWinCount = 0;
@@ -67,15 +91,15 @@
 
         function startGame() {
             //for (let i =0; i < 4; i++){
-            let validPlayerChoice = false
-            let playerSelection = getPlayerChoice().toLowerCase();
-            validPlayerChoice = checkPlayerChoice(playerSelection)
+            // let validPlayerChoice = false
+            // let playerSelection = getPlayerChoice().toLowerCase();
+            // validPlayerChoice = checkPlayerChoice(playerSelection)
 
-            while (validPlayerChoice == false) {
-                console.log('That was an invalid choice, please pick again!')
-                playerSelection = getPlayerChoice().toLowerCase();
-                validPlayerChoice = checkPlayerChoice(playerSelection)
-            }
+            // while (validPlayerChoice == false) {
+            //     console.log('That was an invalid choice, please pick again!')
+            //     playerSelection = getPlayerChoice().toLowerCase();
+            //     validPlayerChoice = checkPlayerChoice(playerSelection)
+            // }
             
             let computerSelection = getComputerChoice().toLowerCase();
             const playRoundResult = playRound(playerSelection, computerSelection);
@@ -84,7 +108,7 @@
          }
         //}
 
-        startGame()*/
+        startGame()
 
         </script>
 
