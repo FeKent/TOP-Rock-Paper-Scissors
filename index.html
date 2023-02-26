@@ -6,13 +6,35 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-  
+        
+        <div id="header">
+            <h1>Rock, Paper, Scissors</h1>
+            <p>Let's play a game!</p>
+        </div>
+
+        <div id="scoreCard">
+            <div id="playerScore">
+            1
+            </div>
+            <div id="computerScore">
+            2
+            </div>
+        </div>
+
+        <div id="resultsDisplay"></div>
+
+        <div id="computerChoice"></div>
+
+        <div id="playRoundResult"></div>
+        
+
        <script>
 
         const container = document.createElement('div');
         container.setAttribute('id', 'btnContainer');
-        document.body.appendChild(container);
+        document.body.insertBefore(container, resultsDisplay);
         //document.body appends the container directly to the body of the HTML 
+        //insertBefore means that the child is added into the body before another element
 
         const button = document.createElement('button');
         button.textContent = 'Rock';
@@ -36,7 +58,11 @@
         let playerSelection = '';
        
         button.addEventListener('click', () =>{
-            console.log('You chose Rock');
+            const playerChoice = document.createElement('h3');
+            playerChoice.textContent = 'You chose Rock';
+            resultsDisplay.appendChild(playerChoice);
+
+
             playerSelection = 'rock';
             button.style.backgroundColor = 'green';
             resetOtherColors(button)
@@ -44,7 +70,10 @@
         });
 
         button1.addEventListener('click', () =>{
-            console.log('You chose Paper');
+            const playerChoice = document.createElement('h3');
+            playerChoice.textContent = 'You chose Paper';
+            resultsDisplay.appendChild(playerChoice);
+
             playerSelection = 'paper';
             button1.style.backgroundColor = 'green';
             resetOtherColors(button1)
@@ -52,7 +81,10 @@
         });
 
         button2.addEventListener('click', () =>{
-            console.log('You chose Scissors');
+            const playerChoice = document.createElement('h3');
+            playerChoice.textContent = 'You chose Scissors';
+            resultsDisplay.appendChild(playerChoice);
+
             playerSelection = 'scissors';
             button2.style.backgroundColor = 'green';
             resetOtherColors(button2)
@@ -64,6 +96,7 @@
             const resetButtons = buttons.filter(x => x != buttonPressed)
             resetButtons.forEach(btn => btn.style.backgroundColor = 'buttonface');
         }
+
 
         function resetAllColors(){
             const buttons = [button, button1, button2]
@@ -121,9 +154,9 @@
                 resetAllColors()
             }, 2200); 
          }
-        //}
+    
 
-        startGame()
+        
 
         </script>
 

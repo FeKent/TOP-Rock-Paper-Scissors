@@ -4,12 +4,54 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    max-height: 50%;
+    margin-top: 30px;
 }
 
 button{
     padding: 10px;
     margin: 20px;
+    border-color: buttonface;
+}
 
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5995DA;
+    color: azure;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+h1{
+    margin-bottom: 4px;
+}
+
+p{
+    font-weight: bold;
+}
+
+#resultsDisplay{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h3{
+    margin-left: 10px;
+    padding: 15px;
+    border-style: groove;
+    border: 2px solid green;
+    color: #5995DA;
+}
+
+#scoreCard{
+    display: flex;
+    justify-content: space-between;
+}
+
+#playerScore{
+    height: 100px;
+    width: 100px;
 }
