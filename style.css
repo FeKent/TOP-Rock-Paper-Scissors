@@ -35,18 +35,29 @@ p{
     font-weight: bold;
 }
 
-#resultsDisplay{
+#resultsDisplay,
+#computerChoice{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
+#resultsDisplay{
+    margin-top: 50px;
+    margin-left: 10px;
+    padding: 15px;
+    color: green;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+
 h3{
     margin-left: 10px;
     padding: 15px;
-    border: 2px groove green;
-    border-radius: 12px;
-    color: #5995DA;
+    color: green;
+    font-weight: 300;
+    font-size: 22px;
 }
 
 #scoreCard{
@@ -63,8 +74,18 @@ h3{
     color: black;
 }
 
+#score{
+    font-size: 22px;
+    font-weight: 200;
+    margin-top: 19.92px;
+    text-align: center;
+}
+
 #roundResult{
     font-size: 20px;
     margin-top: 19.92px;
+}
 
+#player{
+    width: 156.109px;
 }
