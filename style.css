@@ -1,4 +1,6 @@
-
+body{
+    background-color: #89c0ff6c;
+}
 
 #btnContainer{
     display: flex;
@@ -11,6 +13,7 @@ button{
     padding: 10px;
     margin: 20px;
     border-color: buttonface;
+    border-radius: 15px;
 }
 
 #header{
@@ -41,17 +44,27 @@ p{
 h3{
     margin-left: 10px;
     padding: 15px;
-    border-style: groove;
-    border: 2px solid green;
+    border: 2px groove green;
+    border-radius: 12px;
     color: #5995DA;
 }
 
 #scoreCard{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    color: #5995DA;
+    margin-right: -10px;
 }
 
-#playerScore{
-    height: 100px;
-    width: 100px;
+.score{
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    color: black;
+}
+
+#roundResult{
+    font-size: 20px;
+    margin-top: 19.92px;
+
 }
