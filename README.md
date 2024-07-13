@@ -1,4 +1,4 @@
-# Odin-Rock-Paper-Scissors
+# Rock, Paper, Scissors! Website
 The Odin Project: https://www.theodinproject.com/
 
 # Overview
